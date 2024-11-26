@@ -1,0 +1,99 @@
+<!--  **********************************************  -->
+<!--  **********  /02-eventos/index.html  **********  -->
+<!--  **********************************************  -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 02 Eventos - DOM JavaScript - AlexCGDesign </title>
+    <link rel="icon" href="../favicon-JS-2.ico">
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+
+    <main class="wrapper" data-id="wrapper">
+
+        <h1> ¡Bienvenido 👋, <span data-id="name">Usuario</span>! </h1>
+
+        <form action="/verificacion.php">
+            <input type="text" placeholder="Ingresa tu nombre">
+            <input type="submit">
+        </form>
+
+    </main>
+
+    
+    <!--  ----------  SECTION ONCLICK  ----------  -->
+    <section class="section-onclick">
+
+        <h2> onclick </h2>
+        <!--  -----  Mala Practica  -----  -->
+        <button 
+            class="button-color" 
+            data-color="darkgreen"
+            onclick="controladorEvento()"    
+        > 
+            Cual es tu nombre - onclick html
+        </button>
+        
+        <button 
+            class="button-color" 
+            data-color="hotpink"
+            data-id="button-show1"
+        > 
+            Cual es tu nombre - onclick js
+        </button>
+
+        <button 
+            class="button-color" 
+            data-color="steelblue"
+            data-id="button-show2"
+        > 
+            Cual es tu nombre - addEventListener js
+        </button>
+
+    </section>
+
+
+    <!--  ----------  SECTION SHOW / HIDE  ----------  -->
+    <section class="section-show-hide">
+        <h2> Show / Hide </h2>
+        <button class="button-color" data-color="darkgreen" id="show"> Show </button>
+        <button class="button-color" data-color="hotpink" id="hide"> Hide </button>
+    </section>
+
+    <!--  ----------  SECTION SHOW / HIDE  ----------  -->
+    <section class="section-show-hide">
+        <h2> Show / Hide </h2>
+        <button class="button-color" data-color="darkgreen" id="show"> Show </button>
+        <button class="button-color" data-color="hotpink" id="hide"> Hide </button>
+    </section>
+
+    <!--  ----------  EVENT PROPAGATION  ----------  -->
+    <section class="section-event-propagation">
+        <h2> Event Propagation </h2>
+        <button class="button-color" data-color="darkgreen" id="eventProp"> event propagation </button>
+        <h3> hacer click en cualquier parte del documento </h3>
+    </section>
+
+
+    <!--  ----------  SECTION CHANGE COLOR  ----------  -->
+    <section class="section-change-color">
+        <h2> Change Color </h2>
+        <button class="button-color" data-color="darkgreen">Cambia a color verde</button>
+        <button class="button-color" data-color="hotpink">Cambia a color rosa</button>
+        <button class="button-color" data-color="steelblue">Cambia a color azul</button>
+
+    </section>
+
+
+    <script src="./02-app.js"></script>
+
+</body>
+
+</html>
