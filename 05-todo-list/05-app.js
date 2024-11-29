@@ -3,17 +3,7 @@
 //  ***********************************************  
 
 
-/*
-
-- `beforebegin` ← El HTML se inserta antes del elemento de referencia, como hermano anterior.
-- `afterbegin`  ← El HTML se inserta como primer hijo del elemento.
-- `beforeend`   ← El HTML se inserta como último hijo del elemento.
-- `afterend`    ← El HTML se inserta después del elemento de referencia, como hermano siguiente.
-
-*/
-
-
-//  **********  3. Clases  **********
+//  **********  5. Todo List  **********
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -91,6 +81,43 @@ document.addEventListener('DOMContentLoaded', () => {
     message();
     
     form.addEventListener('submit', handleSubmit);
+
+
+    //  -----  beforebegin -----
+    //  -----  El HTML se inserta antes del elemento de referencia, como hermano anterior  -----
+    const wrapper2 = document.querySelector('.wrapper2');
+    wrapper2.insertAdjacentHTML('beforebegin', `
+        <h4> insertAdjacentHTM - beforebegin </h4>    
+        <button> Dame Click!!! </button>
+    `);
+
+
+    //  -----  afterbegin -----
+    //  -----  El HTML se inserta como primer hijo del elemento.  -----
+    wrapper2.insertAdjacentHTML('afterbegin', `
+        <h4> insertAdjacentHTM - afterbegin </h4>    
+        <button> Dame Click!!! </button>
+    `);
+
+    //  -----  beforeend -----
+    //  -----  El HTML se inserta como último hijo del elemento.  -----
+    wrapper2.insertAdjacentHTML('beforeend', `
+        <h4> insertAdjacentHTM - beforeend </h4>    
+        <button> Dame Click!!! </button>
+    `);
+
+    //  -----  afterend -----
+    //  -----  El HTML se inserta después del elemento de referencia, como hermano siguiente  -----
+    wrapper2.insertAdjacentHTML('afterend', `
+        <h4> insertAdjacentHTM - afterend </h4>    
+        <button> Dame Click!!! </button>
+    `);
+
+    //  -----  cloneNode = true, clona el nodo y sus hijos  -----
+    //  -----  cloneNode = false, clona el nodo solamente  -----
+    const copyWrapper2 = wrapper2.cloneNode(true);
+    wrapper2.after(copyWrapper2);
+
     
     console.log('\n\n\n\n\n')
 

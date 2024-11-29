@@ -72,3 +72,13 @@ p {
 .task-message {
     margin-left: 100px;
 }
+
+/*  **********  */
+.wrapper2 {
+    width: 80%;
+    height: 200px;
+    margin: 50px;
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(135, 119, 150);
+}

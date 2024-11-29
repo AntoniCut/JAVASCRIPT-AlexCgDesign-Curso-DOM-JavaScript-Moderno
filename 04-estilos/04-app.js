@@ -4,7 +4,7 @@
 
 
 
-//  **********  3. Clases  **********
+//  **********  4. Estilos  **********
 
 document.addEventListener('DOMContentLoaded', () => {
 
