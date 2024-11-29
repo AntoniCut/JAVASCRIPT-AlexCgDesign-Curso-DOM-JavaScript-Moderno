@@ -43,6 +43,10 @@ form{
 .section-onclick,
 .section-show-hide,
 .section-event-propagation,
+.section-event-propagation-stop,
+.section-event-propagation-stop-immediate,
+.section-fase-captura,
+.section-matches-closest,
 .section-change-color{
     color: #eee;
     background-color: rebeccapurple;
